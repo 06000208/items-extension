@@ -2,7 +2,7 @@
 
 Enhanced freeform browser bookmarks
 
-⚠️ This is a work in progress, and there are no releases available
+⚠️ This is a work in progress, and there are no releases available.
 
 ## Design Choices
 
@@ -11,4 +11,4 @@ Enhanced freeform browser bookmarks
 
 ## Credits & Attributions
 
-- This project makes use of SVG vector images from [IonIcons](https://ionicons.com/) and modifies them to suit it's needs. They are licensed under the [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
+- This project uses SVG vector images from [IonIcons](https://ionicons.com/) and modifies them to suit its needs. They are licensed under the [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)

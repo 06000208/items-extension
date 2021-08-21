@@ -1,3 +1,4 @@
+<!-- Modified from IonIcons' pricetag-outline svg, refer to their MIT License for license info -->
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452'>
   <title>Tag</title>
   <path stroke-width="32" stroke-linejoin="round" stroke-linecap="round" stroke="#FBFBFE" fill="none" d="m405.25,18l-122.9,0a14.46,14.46 0 0 0 -10.2,4.2l-245.7,245.7a28.85,28.85 0 0 0 0,40.7l117,117a28.85,28.85 0 0 0 40.7,0l245.6,-245.6a14.46,14.46 0 0 0 4.2,-10.2l0,-123a28.66,28.66 0 0 0 -28.7,-28.8z"/>
