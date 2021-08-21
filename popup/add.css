@@ -1,0 +1,7 @@
+html, body {
+  width: 310px;
+}
+
+[hidden] {
+  display: none !important;
+}

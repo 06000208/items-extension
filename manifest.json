@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Item Engine",
+  "version": "0.1",
+  "description": "Enhanced freeform browser bookmarks",
+  "homepage_url": "https://github.com/06000208/item-engine",
+  "icons": {
+    "48": "icons/tag_edited.svg",
+    "96": "icons/tag_edited.svg"
+  },
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "browser_action": {
+    "default_icon": "icons/tag_edited.svg",
+    "default_title": "Add Item",
+    "default_popup": "popup/add.html"
+  },
+  "web_accessible_resources": [
+    "icons/tag.svg"
+  ]
+}
