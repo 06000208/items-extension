@@ -1,0 +1,8 @@
+:root {
+  --page-background: #121212;
+  --popup-background: #42414d;
+  --popup-border-color: #52525E;
+  --card-background: #23222B;
+  --text-color: #eee;
+  --popup-theme-border: 1px solid var(--popup-border-color);
+}
