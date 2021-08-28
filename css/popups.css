@@ -1,0 +1,30 @@
+html, body {
+  min-width: 310px;
+}
+
+html, body {
+  background-color: var(--popup-background, transparent);
+}
+
+/* body { border: var(--popup-theme-border); } */
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  gap: 0.5em;
+}
+
+#title, #header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
+
+#title {
+  justify-content: center;
+}
+
+#header {
+  justify-content: space-between;
+}

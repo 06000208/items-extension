@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+:root {
+  --shade-one: #121212;
+  --shade-two: #2a2a2a;
+  --shade-three: #414141;
+  --shade-four: #5a5a5a;
+  --shade-five: #717171;
+  --shade-six: #898989;
+  --shade-seven: #a0a0a0;
+  --shade-eight: #b8b8b8;
+  --shade-nine: #eee;
+  --shade-primary: #539bf5;
+  --shade-primary-one: rgba(83, 155, 245, 0.1);
+  --shade-primary-two: rgba(83, 155, 245, 0.2);
+  --shade-primary-three: rgba(83, 155, 245, 0.4);
+  /* --text-color: var(--shade-nine); */
+  --text-color-secondary: var(--shade-eight);
+  --text-color-disabled: var(--shade-six);
+  --text-color-highlight: var(--shade-primary);
+  --font-size: 16px;
+  --spacing: 8px;
+  --corners: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* > :first-child {
+  margin-top: 0;
+}
+
+* > :last-child {
+  margin-bottom: 0;
+}
+
+[hidden],
+template {
+  display: none !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-color, inherit);
+  font-size: var(--font-size);
+  font-family: sans-serif;
+}
+
+/* General Elements */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: var(--font-size) 0;
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+pre {
+  display: block;
+}
+
+code {
+  display: inline-block;
+}
+
+pre,
+code {
+  padding: 0px 3px;
+  color: inherit;
+  font-size: var(--font-size);
+  font-family: monospace;
+  background-color: var(--shade-primary-one);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* Interface Components */
+
+::placeholder {
+  color: var(--text-color-secondary);
+}
+
+:focus,
+:focus-visible {
+  outline: 1px solid var(--shade-primary);
+  outline-offset: 1px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a {
+  /* rgb(102, 156, 255) */
+  color: var(--text-color-highlight);
+  border: solid 1px transparent;
+  text-decoration: none;
+  outline-color: var(--shade-primary);
+  transition: 0.2s;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+button,
+select,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+button,
+input,
+textarea {
+  background-color: var(--shade-primary-two);
+  padding: 4px 6px;
+}
+
+select {
+  padding: 4px 1px;
+  background-color: var(--shade-three);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  text-align: center;
+  font-family: monospace;
+  width: 22px;
+  padding: 0px;
+}
+
+input[type="checkbox"]:after {
+  content: "\2714";
+  color: transparent;
+}
+
+input[type="checkbox"]:checked:after {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  display: inline-block;
+  color: var(--text-color);
+  outline-color: var(--shade-primary);
+  font-size: var(--font-size);
+  font-family: sans-serif;
+  margin: unset;
+  border: none;
+  border-radius: var(--corners);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+button:hover,
+input:hover,
+textarea:hover,
+input:focus-visible,
+textarea:focus-visible {
+  background-color: var(--shade-primary-three);
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus-visible {
+  background-color: var(--shade-primary-two);
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked:disabled {
+  background-color: var(--shade-primary-three);
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled,
+button:disabled:hover,
+input:disabled:hover,
+select:disabled:hover,
+textarea:disabled:hover {
+  color: var(--text-color-disabled);
+  cursor: default;
+}
+
+button:disabled,
+input:disabled,
+textarea:disabled,
+button:disabled:hover,
+input:disabled:hover,
+textarea:disabled:hover {
+  background-color: var(--shade-primary-one);
+}
+
+select:disabled,
+select:disabled:hover {
+  background-color: var(--shade-two);
+}
+
+canvas {
+  display: inline-block;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+}
