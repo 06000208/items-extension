@@ -1,0 +1,6 @@
+<!-- Modified from the IonIcons iconset, and used under the terms of its license ( https://github.com/ionic-team/ionicons/blob/master/LICENSE ) with a link back to their website: https://ionic.io/ionicons -->
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 527 527'>
+  <title>Bookmarks</title>
+  <path stroke-width="48" stroke-linejoin="round" stroke="#EEEEEE" fill="none" d="m136.5,88l0,-16a48.14,48.14 0 0 1 48,-48l224,0a48.14,48.14 0 0 1 48,48l0,368l-80,-64"/>
+  <path stroke-width="48" stroke-linejoin="round" stroke="#EEEEEE" fill="none" d="m328.5,104l-208,0a48.14,48.14 0 0 0 -48,48l0,352l152,-128l152,128l0,-352a48.14,48.14 0 0 0 -48,-48z"/>
+</svg>
