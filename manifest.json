@@ -5,21 +5,59 @@
   "description": "Enhanced freeform browser bookmarks",
   "homepage_url": "https://github.com/06000208/item-engine",
   "icons": {
-    "48": "icons/tag_edited.svg",
-    "96": "icons/tag_edited.svg"
+    "16": "icons/bookmarks-dark.svg",
+    "48": "icons/bookmarks-dark.svg",
+    "96": "icons/bookmarks-dark.svg",
+    "128": "icons/bookmarks-dark.svg"
   },
   "permissions": [
     "activeTab",
     "bookmarks",
     "storage",
-    "unlimitedStorage"
+    "unlimitedStorage",
+    "contextMenus",
+    "clipboardWrite",
+    "theme"
   ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "browser_action": {
-    "default_icon": "icons/tag_edited.svg",
+    "default_icon": "icons/bookmarks-dark.svg",
+    "default_title": "Item Engine",
+    "browser_style": true,
+    "theme_icons": [{
+      "light": "icons/bookmarks-light.svg",
+      "dark": "icons/bookmarks-dark.svg",
+      "size": 16
+    },
+    {
+      "light": "icons/bookmarks-light.svg",
+      "dark": "icons/bookmarks-dark.svg",
+      "size": 32
+    }]
+  },
+  "page_action": {
+    "default_icon": "icons/link-dark.svg",
     "default_title": "Add Item",
-    "default_popup": "popup/add.html"
+    "default_popup": "add-light.html",
+    "browser_style": true,
+    "show_matches": ["<all_urls>"],
+    "hide_matches": ["*://addons.mozilla.org/*"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false,
+    "browser_style": true,
+    "chrome_style": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "itemengine@06000208.github.io"
+    }
   },
   "web_accessible_resources": [
-    "icons/tag.svg"
+    "css/*.css",
+    "icons/*.svg"
   ]
 }
