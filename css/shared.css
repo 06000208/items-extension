@@ -13,8 +13,8 @@
   --shade-nine: #eee;
   --shade-primary: #539bf5;
   --shade-primary-one: rgba(83, 155, 245, 0.1);
-  --shade-primary-two: rgba(83, 155, 245, 0.2);
-  --shade-primary-three: rgba(83, 155, 245, 0.4);
+  --shade-primary-two: rgba(83, 155, 245, 0.3);
+  --shade-primary-three: rgba(83, 155, 245, 0.5);
   /* --text-color: var(--shade-nine); */
   --text-color-secondary: var(--shade-eight);
   --text-color-disabled: var(--shade-six);
