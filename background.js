@@ -37,6 +37,8 @@ const defaultSettings = {
   focusEngine: true,
   itemEngineTag: false,
   itemEngineTagName: "item",
+  itemEngineLimitFolder: "",
+  itemEngineDefaultFolder: "Other Bookmarks",
 };
 let settings = {};
 
@@ -92,25 +94,41 @@ const pageActionUpdateAllTabs = async function() {
   });
 };
 
+const messageHandler = async function(message) {
+  if (!message.event) return;
+  if (message.event === "backgroundSettingsUpdate") {
+    const storedSettings = await simpleStorage.get("settings") || {};
+    settings = {
+      ...defaultSettings,
+      ...storedSettings,
+    };
+    await browser.runtime.sendMessage({
+      "event": "settingsUpdate",
+      "settings": settings,
+    });
+  }
+};
+
 const initialize = async function() {
   // @TODO Update default settings based on theme
   // (await browser.windows.getCurrent()).id
+
   // Settings
   const storedSettings = await simpleStorage.get("settings") || {};
-  // const storedSettings = {};
-  // const storedSettings = (await browser.storage.local.get("settings")).settings;
   settings = {
     ...defaultSettings,
     ...storedSettings,
-    // ...settings,
   };
   await simpleStorage.set("settings", settings);
-  await browser.storage.local.set({ "settings": settings });
+  await simpleStorage.set("defaultSettings", defaultSettings);
   console.log("Loaded settings", settings, storedSettings);
+
   // Browser action
   browser.browserAction.onClicked.addListener(browserActionListener);
   // Page action theme support
   browser.tabs.onUpdated.addListener(tabsOnUpdatedListener);
+  // Add message handler
+  browser.runtime.onMessage.addListener(messageHandler);
 };
 
 initialize();

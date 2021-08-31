@@ -14,12 +14,31 @@ const simpleStorage = {
   },
 };
 
+const messageHandler = async function(message) {
+  if (!message.event) return;
+  if (message.event === "settingsUpdate") {
+    window.dispatchEvent(new CustomEvent("settingsUpdate", {
+      detail: {
+        settings: message.settings,
+      },
+    }));
+  }
+};
+
 const initialize = async function() {
   // Settings
-  const settings = await simpleStorage.get("settings") || {};
+  const settings = await simpleStorage.get("settings");
+  const defaultSettings = await simpleStorage.get("defaultSettings");
   console.log("Loaded settings inside shared.js", settings);
+  // Add message handler
+  browser.runtime.onMessage.addListener(messageHandler);
   // Ready for page specific js
-  window.dispatchEvent(new CustomEvent("appReady", { detail: { settings: settings } }));
+  window.dispatchEvent(new CustomEvent("appReady", {
+    detail: {
+      settings: settings,
+      defaultSettings: defaultSettings,
+    },
+  }));
 };
 
 // initialize();
