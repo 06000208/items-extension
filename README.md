@@ -6,6 +6,7 @@ Enhanced freeform browser bookmarks
 
 ## Design Choices
 
+- Derived from some of the ideas and principles of [abstract editor](https://github.com/06000208/abstract-editor) as they apply to browser bookmarks
 - Local environment/offline first, your data should remain on your devices
   - Compatible with [xBrowserSync](https://www.xbrowsersync.org/)
 
