@@ -1,12 +1,10 @@
 html, body {
-  min-width: 310px;
+  width: 310px;
 }
 
 html, body {
   background-color: var(--popup-background, transparent);
 }
-
-/* body { border: var(--popup-theme-border); } */
 
 #content {
   display: flex;
@@ -28,3 +26,8 @@ html, body {
 #header {
   justify-content: space-between;
 }
+
+/*
+  background-color: var(--popup-border-color, transparent);
+  border: var(--popup-theme-border);
+*/

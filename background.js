@@ -37,6 +37,7 @@ const defaultSettings = {
   focusEngine: true,
   itemEngineTag: false,
   itemEngineTagName: "item",
+  itemTagLinking: false,
   itemEngineLimitFolder: "",
   itemEngineDefaultFolder: "Other Bookmarks",
 };

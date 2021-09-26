@@ -7,6 +7,7 @@ const descriptions = {
   "focusEngine": "Automatically switch to Item Engine when opening it from the toolbar button",
   "itemEngineTag": "Distinguish bookmarks created/modified through item engine with a tag",
   "itemEngineTagName": "Tag for distinguishing bookmarks created/modified through item engine",
+  "itemTagLinking": "Enable tags linking items of the same name",
   "itemEngineLimitFolder": "Limit item engine to a specific folder",
   "itemEngineDefaultFolder": "Default folder for new items",
 };
@@ -143,6 +144,7 @@ const generateOptions = function() {
 
 window.addEventListener("appReady", (event) => {
   // Setup data
+  // { ... } is used to create new objects and avoid changing the same reference
   options.entries = Object.entries(event.detail.settings);
   options.settings = { ...event.detail.settings } ;
   options.pendingSettings = { ...event.detail.settings };
