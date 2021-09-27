@@ -1,8 +1,10 @@
 # item-engine
 
-Enhanced freeform browser bookmarks
+Enhanced freeform browser bookmarks via WebExtension
 
 ⚠️ This is a work in progress, and there are no releases available.
+
+Sister project to [obsidian-items](https://github.com/06000208/obsidian-items)
 
 ## Design Choices
 
