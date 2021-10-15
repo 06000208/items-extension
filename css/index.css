@@ -1,7 +1,7 @@
 html {
-  background-color: var(--page-background);
+    background-color: var(--page-background);
 }
 
 body {
-  padding: 1em;
+    padding: 1em;
 }

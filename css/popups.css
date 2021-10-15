@@ -1,30 +1,33 @@
-html, body {
-  width: 310px;
+html,
+body {
+    width: 310px;
 }
 
-html, body {
-  background-color: var(--popup-background, transparent);
+html,
+body {
+    background-color: var(--popup-background, transparent);
 }
 
 #content {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5em;
-  gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 0.5em;
 }
 
-#title, #header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} 
+#title,
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 #title {
-  justify-content: center;
+    justify-content: center;
 }
 
 #header {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 /*

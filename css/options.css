@@ -1,48 +1,50 @@
 html {
-  background-color: var(--card-background);
+    background-color: var(--card-background);
 }
 
 body {
-  padding-top: 17px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 16px;
-  /* padding-bottom: 16px; */
-  max-width: 500px;
+    padding-top: 17px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
+    max-width: 500px;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
 }
 
-.progress-bar, .buttons {
-  margin-bottom: 1em;
+.progress-bar,
+.buttons {
+    margin-bottom: 1em;
 }
 
 .progress-bar {
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--corners);
-  background-color: var(--shade-primary-one);
-  transition: 1s;
-  opacity: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--corners);
+    background-color: var(--shade-primary-one);
+    transition: 1s;
+    opacity: 1;
 }
 
-.progress-bar.collapse, .progress-bar.collapse .progress-fill {
-  height: 0%;
-  margin-bottom: 0px;
+.progress-bar.collapse,
+.progress-bar.collapse .progress-fill {
+    height: 0%;
+    margin-bottom: 0px;
 }
 
 .progress-fill {
-  height: 1em;
-  width: 0%;
-  border-radius: var(--corners);
-  background-color: var(--shade-primary-three);
-  transition: 1s;
+    height: 1em;
+    width: 0%;
+    border-radius: var(--corners);
+    background-color: var(--shade-primary-three);
+    transition: 1s;
 }
 
 /* .progress-bar:hover .progress-fill, .progress-fill:hover {
@@ -50,38 +52,38 @@ body {
 } */
 
 .test {
-  transition: 0.2s;
-  opacity: 1;
+    transition: 0.2s;
+    opacity: 1;
 }
 
 .hidden {
-  opacity: 0;
+    opacity: 0;
 }
 
 #options > div {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
 #options > div:first-child {
-  margin-top: unset;
+    margin-top: unset;
 }
 
 #options > div:last-child {
-  margin-bottom: unset;
+    margin-bottom: unset;
 }
 
 #options > div > p {
-  /* margin: unset; */
-  margin-top: unset;
-  margin-bottom: 0.5em;
+    /* margin: unset; */
+    margin-top: unset;
+    margin-bottom: 0.5em;
 }
 
 input {
-  width: 100%;
+    width: 100%;
 }
 
 span {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /* #options {
@@ -101,18 +103,18 @@ span {
 } */
 
 .bool {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
 }
 
 .bool > input {
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .bool > span {
-  flex-grow: 1;
+    flex-grow: 1;
 }
