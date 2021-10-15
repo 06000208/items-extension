@@ -2,6 +2,7 @@ import Items from "./Items.js";
 
 /**
  * Items class
+ * @extends Items
  */
 class ItemsService extends Items {
     /**
