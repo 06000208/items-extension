@@ -14,7 +14,7 @@ class App extends EventTarget {
         /**
          * Extension settings
          * @note Kept up to date via extension messaging
-         * @todo Implement browser.runtime.openOptionsPage(); in various places throughout the extension
+         * @todo Implement browser.runtime.openOptionsPage(); in various places, but the options page may also be embedded in the web application and quick menu
          * @type {?object}
          */
         this.settings = null;
@@ -70,6 +70,8 @@ class App extends EventTarget {
     }
 }
 
+export default App;
+
 // doSomething() {
 //   this.dispatchEvent(new Event("something"));
 // }
@@ -77,5 +79,3 @@ class App extends EventTarget {
 // new CustomEvent("settingsUpdate", {
 //     detail: "test",
 // }
-
-export default App;

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-import { defaultSettings, settingDescriptions } from "./constants.js";
+import { defaultSettings, settingDescriptions } from "./modules/constants.js";
 // import simpleStorage from "./simpleStorage.js";
 
 let app = null;
@@ -12,14 +12,7 @@ const options = {
     buttons: false,
 };
 
-/**
- * Associated settings to disable in the GUI when falsy
- * @type {object.<string, string[]>}
- * @todo How on earth are you supposed to objects in jsdoc again...?
- */
-const disableOnFalsy = {
-    "itemEngineTag": ["itemEngineTagName"],
-};
+
 const falsyCache = {};
 
 const updateButtons = function(toggle) {

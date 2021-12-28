@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/shared.css">
+    <!-- <link rel="stylesheet" href="css/options.css"> -->
+    <link id="theme" href="css/dark.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/supportDeviceTheme.css"> -->
+</head>
+
+<body>
+    <div class="buttons">
+        <button id="apply" disabled>Apply Changes</button>
+        <button id="cancel" disabled>Cancel</button>
+    </div>
+    <!-- <div class="buttons">
+    <button id="reset" disabled>Restore default options</button>
+    </div> -->
+    <div class="progress-bar">
+        <div id="progress" class="progress-fill"></div>
+    </div>
+    <div id="options">
+        
+    </div>
+    <!-- Manipulated Elements -->
+    <template id="boolTemplate">
+        <div class="bool">
+            <input type="checkbox" autocomplete="off"> <span></span>
+        </div>
+    </template>
+    <template id="textTemplate">
+        <div>
+            <p></p>
+            <input placeholder="" autocomplete="off"></input>
+        </div>
+    </template>
+    <!-- Scripts
+    <script src="js/manuallyApplyTheme.js"></script>
+    <script src="js/options.js" type="module"></script>
+    <script src="js/basic.js" type="module"></script>
+    -->
+</body>
+
+</html>

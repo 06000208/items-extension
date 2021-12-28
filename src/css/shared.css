@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 
 :root {
-    --shade-one: #121212;
+
     --shade-two: #2a2a2a;
     --shade-three: #414141;
     --shade-four: #5a5a5a;
@@ -10,12 +10,7 @@
     --shade-six: #898989;
     --shade-seven: #a0a0a0;
     --shade-eight: #b8b8b8;
-    --shade-nine: #eee;
-    --shade-primary: #539bf5;
-    --shade-primary-one: rgba(83, 155, 245, 0.1);
-    --shade-primary-two: rgba(83, 155, 245, 0.3);
-    --shade-primary-three: rgba(83, 155, 245, 0.5);
-    /* --text-color: var(--shade-nine); */
+
     --text-color-secondary: var(--shade-eight);
     --text-color-disabled: var(--shade-six);
     --text-color-highlight: var(--shade-primary);
@@ -117,7 +112,6 @@ main {
 }
 
 a {
-    /* rgb(102, 156, 255) */
     color: var(--text-color-highlight);
     border: solid 1px transparent;
     text-decoration: none;

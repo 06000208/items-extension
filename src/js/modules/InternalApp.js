@@ -138,6 +138,10 @@ class InternalApp extends App {
         // Initialize parent App
         await super.initialize();
 
+        // Handle browser theme matching
+        /** @todo if this.settings.theme==="browser" handle browser theme matching */
+        /** @todo push a settings update event */
+
         // Store settings in storage
         await simpleStorage.set("settings", this.settings);
 

@@ -1,8 +1,8 @@
 :root {
     --page-background: #fefefe;
+    --text-color: #111;
     --popup-background: var(--page-background);
     --popup-border-color: #ddd;
-    --card-background: #ffffff;
-    --text-color: #111;
     --popup-theme-border: none;
+    --firefox-content-box-background: #ffffff;
 }

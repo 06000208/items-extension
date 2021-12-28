@@ -1,0 +1,16 @@
+:root {
+    /* Shades */
+    --shade-primary: rgb(83, 155, 245);
+    --shade-primary-one: rgba(83, 155, 245, 0.1);
+    --shade-primary-two: rgba(83, 155, 245, 0.3);
+    --shade-primary-three: rgba(83, 155, 245, 0.5);
+    /* Variables */
+    --page-background: #121212;
+    --text-color: #eee;
+    --text-color-highlight: var(--shade-primary);
+    --popup-background: #42414d;
+    --popup-border-color: #52525e;
+    --popup-theme-border: 1px solid var(--popup-border-color);
+    --firefox-content-box-background: #23222b;
+    --firefox-content-box-deemphasized-text: rgb(191, 191, 201);
+}

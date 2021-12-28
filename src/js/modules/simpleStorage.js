@@ -1,7 +1,7 @@
 /**
  * Async helper functions that wrap browser.storage.local for simpler usage similar to [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)'s methods
- * @note No has() because keys may be falsy
- * @note Doesn't use arrow functions because it causes unexpected strange issues
+ * @note This lacks has() because its redundant
+ * @note Doesn't use arrow functions because they cause strange and unexpected issues
  * @type {object}
  */
 const simpleStorage = {
