@@ -4,10 +4,8 @@ Enhanced freeform browser bookmarks via WebExtension
 
 ⚠️ This is a work in progress, and there are no releases available.
 
-## Design Choices
-
-- Derived from some of the ideas and principles of [abstract editor](https://github.com/06000208/abstract-editor) as they apply to browser bookmarks
 <!--
+## Design Choices
 - Local environment/offline first, your data should remain on your device
   - Compatible with [xBrowserSync](https://www.xbrowsersync.org/)?
 -->
